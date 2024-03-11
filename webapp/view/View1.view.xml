@@ -1,0 +1,11 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sap.btp.simple1.controller.View1" displayBlock="true">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <List items="{/Customers}" noDataText="Drop list items here" id="list0">
+                <items>
+                    <StandardListItem type="Navigation" title="{ContactName}" description="{ContactTitle}" icon="sap-icon://picture" id="item1" xmlns:cd="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" cd:w5g.dt.context="/Customers"/>
+                </items>
+            </List>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,29 @@
+{
+  "xsappname": "sapbtpsimple1",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "scopes": [
+    {
+      "name":"$XSAPPNAME.Display",
+      "description":"Display the App to User"
+    }
+  ],
+  "role-templates": [
+    {
+      "name":"sampleDisplayRoleTemp",
+      "description":"Sample Role Template",
+      "scope-references":[
+        "$XSAPPNAME.Display"
+      ]
+    }
+  ],
+  "role-collections":[
+    {
+      "name":"SampleDisplayRoleCollection",
+      "description":"Sample Display Role Collection",
+      "role-template-references":[
+        "$XSAPPNAME.sampleDisplayRoleTemp"
+      ]
+    }
+  ]
+}
